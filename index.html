@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Digital card</title>
+    <link rel="stylesheet" href="sarvicard.css">
+    <script>
+        function flipcard() {
+            var card = document.querySelector('.card');
+            card.classList.toggle('flip');
+        }
+    </script>
+</head>
+<body>
+    <div class="card-container">
+        <div class="card">
+            <div class="front">
+                <div class="frontinnercontent">
+                    <div class="font">Adv. Sarvi V. Patel</div>
+                    <img src="sarvi.png" alt="advsarvipatel" width="250px" height="250px" id="image">
+                </div>
+                <button class="flipcard-button" onclick="flipcard()">Tap Here</button>
+            </div>
+            <div class="back">
+                <div class="backinnercontent">
+                    <p class="all-information">
+                        <div class="details">
+                            Name: Sarvi V. Patel
+                        </div>
+                        <div class="details">
+                            Education: B.com,LLM
+                        </div>
+                        <div class="details">
+                            
+                        </div> 
+                        <div class="details">
+                            <a href="https://wa.me/+918469420968" class="details" target="_blank">
+                                <i class="fa fa-whatsapp"  style="font-size:20px;color:green;"></i>
+                                Number: +918469420968
+                            </a>
+                        </div>
+                        <div class="details">
+                            <a href="https://maps.app.goo.gl/QQt4HTT84qeETw6g9" target="_blank" class="details">
+                                <i class="fa fa-map-marker" style="font-size:20px;color:black;"></i>
+                                Office: Samarth Park - Sidhhi Tower,<br> Near Bhulka Bhavan, Adajan, Surat, Gujarat 395009</a>
+                        </div> 
+                        
+                    </p>
+                </div>
+                <button class="flipcard-button" onclick="flipcard()">Flip Back</button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
